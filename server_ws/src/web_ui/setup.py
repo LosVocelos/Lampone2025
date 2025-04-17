@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'web_ui = web_ui.web_ui:main'
+            'web_ui = web_ui.web_ui:main',
+            'webcam = web_ui.webcam:main'
         ],
     },
 )

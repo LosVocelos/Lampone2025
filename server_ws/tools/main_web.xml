@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="web_ui" exec="webcam" name="webcam"/>
+  <node pkg="web_ui" exec="web_ui" name="web_ui"/>
+  <node pkg="rosboard" exec="rosboard_node" name="rosboard"/>
+  <include file="$(find-pkg-share rosbridge_server)/launch/rosbridge_websocket_launch.xml" >
+     <arg name="port" value="9090"/>
+  </include>
+</launch>
