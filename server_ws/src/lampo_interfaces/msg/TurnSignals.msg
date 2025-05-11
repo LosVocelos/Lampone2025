@@ -6,4 +6,4 @@ string robot
 # 1 - right                         <       >
 # 2 - left                        2. bit  1. bit
 # 3 - both
-byte blinkers
+uint8 blinkers

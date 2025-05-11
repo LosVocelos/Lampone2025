@@ -11,7 +11,7 @@ class CameraNode(Node):
         super().__init__("webcam_node")
         self.cv_bridge = cv_bridge.CvBridge()
         self.video_publisher = self.create_publisher(Image, 'video_frames', 10)
-        video_timer_period = 1/10  # period of publishing
+        video_timer_period = 1  # period of publishing
         cam = cv2.VideoCapture(0)
         self.timer = self.create_timer(video_timer_period, lambda: self.publish_video_frame(cam))
 
