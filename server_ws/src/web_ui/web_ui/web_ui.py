@@ -21,7 +21,12 @@ class WebUINode(Node):
         message.width = 800
         message.tiles_y = 6
         message.tiles_x = 8
-        message.roads = [1 for i in range(message.tiles_y*message.tiles_x)]
+        message.roads = [ 6, 10, 14, 10, 14, 12,  6, 12,
+                          5,  6, 15, 10,  9,  7,  9,  5,
+                          3, 13,  5,  6, 10,  9,  6, 13,
+                         5, 6,  1, 8, 5, 5, 6, 10,
+                         5, 6,  1, 8, 5, 5, 6, 10,
+                         5, 6,  1, 8, 5, 5, 6, 10]
 
         self.map_publisher.publish(message)
         self.get_logger().info('Publishing road map')
