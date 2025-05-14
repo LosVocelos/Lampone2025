@@ -13,6 +13,7 @@ class CameraNode(Node):
         self.video_publisher = self.create_publisher(Image, 'video_frames', 10)
         video_timer_period = 1  # period of publishing
         cam = cv2.VideoCapture(0)
+        cam.set(cv2.CAP_PROP_BUFFERSIZE, 1)
         self.timer = self.create_timer(video_timer_period, lambda: self.publish_video_frame(cam))
 
     def publish_video_frame(self, cam):
