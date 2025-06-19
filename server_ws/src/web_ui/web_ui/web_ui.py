@@ -31,6 +31,13 @@ class WebUINode(Node):
         self.map_publisher.publish(message)
         self.get_logger().info('Publishing road map')
 
+        lts = TrafficLights()
+        lts.num = 8
+        lts.ids = [0, 1, 2, 3, 4, 5, 6, 7]
+        lts.lights = [0, 1, 2, 3, 4, 5, 6, 7]
+
+        self.lights_publisher.publish(lts)
+
 
 def main(args=None):
     rclpy.init(args=args)

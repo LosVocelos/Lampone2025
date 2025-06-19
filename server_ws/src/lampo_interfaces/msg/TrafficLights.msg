@@ -10,4 +10,4 @@ uint8[] ids
 # 2 (0b010) - yellow                                1. bit - red
 # 3 (0b011) - red, yellow                           2. bit - yellow
 # 4 (0b100) - green                                 3. bit - green
-uint8 lights
+uint8[] lights
