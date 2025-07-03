@@ -29,7 +29,7 @@ class WebUINode(Node):
                          5, 6,  1, 8, 5, 5, 6, 10]
 
         self.map_publisher.publish(message)
-        self.get_logger().info('Publishing road map')
+        # self.get_logger().info('Publishing road map')
 
         lts = TrafficLights()
         lts.num = 8
