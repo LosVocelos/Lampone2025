@@ -32,9 +32,9 @@ class WebUINode(Node):
         # self.get_logger().info('Publishing road map')
 
         lts = TrafficLights()
-        lts.num = 8
-        lts.ids = [0, 1, 2, 3, 4, 5, 6, 7]
-        lts.lights = [0, 1, 2, 3, 4, 5, 6, 7]
+        lts.num = 4
+        lts.ids = [0, 1, 2, 3]
+        lts.lights = [1, 2, 3, 4]
 
         self.lights_publisher.publish(lts)
 
