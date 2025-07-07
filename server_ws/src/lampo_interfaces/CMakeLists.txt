@@ -15,6 +15,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Map.msg"
   "msg/TrafficLights.msg"
   "msg/TurnSignals.msg"
+  "srv/RegisterRobot.srv"
 )
 
 if(BUILD_TESTING)

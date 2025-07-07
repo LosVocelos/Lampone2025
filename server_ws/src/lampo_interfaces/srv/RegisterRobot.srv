@@ -1,0 +1,5 @@
+# The name of the robot (for easy readiness)
+string name
+---
+# returns unique id for every registered robot.
+int64 id
